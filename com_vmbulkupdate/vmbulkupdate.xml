@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.7" method="upgrade">
+    <name>VM Bulk Update</name>
+    <author>NetPlus</author>
+    <creationDate>2012-11-12</creationDate>
+    <copyright>(C) 2011 netplus.jp</copyright>
+    <authorEmail>anthony@netplus.jp</authorEmail>
+    <authorUrl>http://www.netplus.jp</authorUrl>
+    <version>1.5</version>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <description>Virtuemart Bulk Update</description>
+    <scriptfile>script.php</scriptfile>
+
+    <files folder="site">
+        <filename>vmbulkupdate.php</filename>
+        <filename>index.html</filename>
+    </files>
+	
+    <administration>
+        <menu>COM_VMBULKUPDATE_MENU</menu>
+        <files folder="admin">
+            <filename>admin.vmbulkupdate.php</filename>
+            <filename>index.html</filename>
+            <filename>controller.php</filename>			
+            <folder>views</folder>			
+            <folder>templates</folder>						
+            <folder>models</folder>						
+            <folder>js</folder>						
+            <folder>images</folder>						
+            <folder>css</folder>	
+            <folder>controller</folder>	
+            <folder>assets</folder>							
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_vmbulkupdate.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_vmbulkupdate.sys.ini</language>
+        </languages>
+    </administration>
+	
+</extension>

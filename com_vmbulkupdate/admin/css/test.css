@@ -1,0 +1,204 @@
+/* TextboxList sample CSS */
+ul.holder { margin: 0; overflow: hidden; height: auto !important; height: 1%; padding: 4px 5px 0; width:200px; }
+*:first-child+html ul.holder { padding-bottom: 2px; } * html ul.holder { padding-bottom: 2px; } /* ie7 and below */
+ul.holder li {  list-style-type: none; margin: 0 5px 4px 0; display:block; }
+ul.holder li.bit-box, ul.holder li.bit-input input { font: 11px "Lucida Grande", "Verdana"; }
+ul.holder li.bit-box { -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border: 1px solid #CAD8F3; background: #DEE7F8; padding: 1px 5px 2px; }
+ul.holder li.bit-box-focus { border-color: #598BEC; background: #598BEC; color: #fff; }
+ul.holder li.bit-input input { width: 150px; margin: 0; border: none; outline: 0; padding: 3px 0 2px; } /* no left/right padding here please */
+ul.holder li.bit-input input.smallinput { width: 20px; }
+ul.holder li.bit-box a.closebutton { position: absolute; right: 4px; top: 5px; display: block; width: 7px; height: 7px; font-size: 1px; background: url('images/closebtn.jpg'); }
+/* Facebook demo CSS */      
+#facebook-list ul.holder li.bit-box, #apple-list ul.holder li.bit-box { padding-right: 15px; position: relative; }
+#apple-list ul.holder li.bit-input { margin: 0; }
+#apple-list ul.holder li.bit-input input.smallinput { width: 5px; }
+ul.holder li.bit-hover { background: #BBCEF1; border: 1px solid #6D95E0; }
+ul.holder li.bit-box-focus { border-color: #598BEC; background: #598BEC; color: #fff; }
+ul.holder li.bit-box a.closebutton { position: absolute; right: 4px; top: 5px; display: block; width: 7px; height: 7px; font-size: 1px; background: url('images/closebtn.jpg'); }
+ul.holder li.bit-box a.closebutton:hover { background-position: 7px; }
+ul.holder li.bit-box-focus a.closebutton, ul.holder li.bit-box-focus a.closebutton:hover { background-position: bottom; }
+
+/* Autocompleter */
+.chzn-container-multi .chzn-results li.chnz-active-result {
+    display:block !important;
+}
+
+#facebook-auto { display: none; position: absolute; width: 512px; background: #eee; }
+#facebook-auto .default { padding: 5px 7px; border: 1px solid #ccc; border-width: 0 1px 1px; }
+#facebook-auto ul { display: none; margin: 0; padding: 0; }
+#facebook-auto ul li { padding: 5px 12px; margin: 0; list-style-type: none; border: 1px solid #ccc; border-width: 0 1px 1px; font: 11px "Lucida Grande", "Verdana"; }
+#facebook-auto ul li em { font-weight: bold; font-style: normal; background: #ccc; }
+#facebook-auto ul li.auto-focus { background: #4173CC; color: #fff; }
+#facebook-auto ul li.auto-focus em { background: none; }
+
+#demo ul.holder li.bit-input input { padding: 2px 0 1px; border: 1px solid #999; }
+#add a { color: #666; }
+#add-test { width: 100px; padding: 2px; }
+
+div.toolbar-list {margin-right:20px;}
+div.toolbar-list a {border:none !important;}
+#element-box {margin:10px 20px;}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+.clear{
+    clear:both;
+}
+
+/* Stylin the form */
+
+.field_wrapper{
+    border:1px solid #e5e5e5;
+    border-bottom:none;
+}
+
+.acc_header {
+    margin:0;
+    padding:0px;
+    position:relative;
+    display:block;
+    border-bottom:1px solid #e5e5e5;
+    box-shadow: 0 0 30px #fafafa inset;
+    -moz-box-shadow: 0 0 30px #fafafa inset;
+    -webkit-box-shadow: 0 0 30px #fafafa inset;
+    position:relative;
+    background:#fff;
+
+}
+.acc_header .bg {padding: 0 10px 0 38px; overflow:hidden;margin:0px 0 1px 0;}
+
+
+.acc_header span {
+    background: url(../images/sub-plus.gif) 10px center no-repeat ;
+    padding:0;
+    color:#505050!important;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Oswald', sans-serif;
+    text-transform:none;
+    line-height:43px;
+    cursor:pointer;
+    margin:0;
+    display:block;
+    height:1%;
+}
+.active span {
+    background: url(../images/sub-minus.gif) 10px center no-repeat !important;
+}
+.field_wrapper{
+
+}
+
+.field_wrapper fieldset {
+    background:none; 
+    margin:0;
+    padding:0;
+    border:none;
+    border-bottom:1px solid #e5e5e5;
+}
+.field_wrapper fieldset p{
+    margin:0 0 10px 0;
+}
+.field_wrapper td{
+    padding:5px 15px;
+}
+.field_wrapper .indent {
+    background:#f7f7f7;
+    padding:15px 20px 5px 17px;
+    min-height:55px;
+    margin:0;
+    display:none;
+    border-bottom:1px solid #E5E5E5;
+}
+.field_wrapper table.adminform{
+    background:none;
+}
+.acc_header input{
+    margin-left:10px;
+}
+.closebutton {
+    display:block;
+    width:15px;
+    height:15px;
+    background:url(../images/closebtn.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.chzn-choices li span{
+    float:left;
+    line-height:16px;
+    margin-left:20px;
+    display:block;
+}
+
+.action_button, .action_button:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    background:2b459a;
+    background:url(../images/button_background.png);
+    background-position:center;
+    background-repeat:repeat-x;
+    padding: 8px 18px;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border:none;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px -1px 0px rgba(255,255,255,0.7);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px -1px 0px rgba(255,255,255,0.7);
+    text-shadow:
+        0px -1px 1px rgba(000,000,000,0.7),
+        0px 1px 0px rgba(255,255,255,0.3);
+    margin-bottom:10px;
+    margin-right:10px;
+}
+.action_button:hover{
+    background:url(../images/button_down_background.png);
+
+}
+
+#customfieldstable .vm_thumb_image_cat, #customfieldstable .vm_thumb_image{
+    width:80px;
+    padding:10px;
+    margin:5px;
+    border:1px solid #c0c0c0;
+    border-radius:10px;
+    background:#fff;
+    float:left;
+}
+.inconloading.loading{
+    background:url("images/fadinglines.gif");
+    display: block;
+    float: right;
+    height: 16px;
+    width: 16px;
+}
+.inconloading.success{
+    background:url("images/icon-16-allow.png");
+    display: block;
+    float: right;
+    height: 16px;
+    width: 16px;
+}
